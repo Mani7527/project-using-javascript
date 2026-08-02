@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. Card Container */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* 3. Input Section (Input Box + Add Button) */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#taskInput:focus {
+    border-color: #4f46e5; /* Highlight border on click/focus */
+}
+
+#addButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4f46e5; /* Primary Purple/Blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addButton:hover {
+    background-color: #4338ca;
+}
+
+/* 4. Single Task Card Layout */
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Task text styling */
+.taskName {
+    font-size: 16px;
+    color: #1f2937;
+    word-break: break-word;
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Completed State (Strikethrough & Faded) */
+.taskName.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Action Buttons Container */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Button Base Styles */
+.doneButton, .deleteButton {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: opacity 0.2s;
+}
+
+.doneButton:hover, .deleteButton:hover {
+    opacity: 0.85;
+}
+
+/* Done Button Style (Green) */
+.doneButton {
+    background-color: #10b981;
+}
+
+/* Delete Button Style (Red) */
+.deleteButton {
+    background-color: #ef4444;
+} 
